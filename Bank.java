@@ -1,63 +1,15 @@
-public class Bank{
+class bank{
 
-private int bankId;
-private String bankName;
-private String branchName;
-private String ifccode;
-private String managerName;
-private int noOfEmployees;
-private  String mifcCode;
+public void transaction(String name,String type,int noOfBranches){
 
-public void setBankId(int bankId){
-this.bankId = bankId;
-}
-public int getBankId(){
-return bankId;
-}
+System.out.println("Invoked transaction");
 
-public void setBankName(String bankName){
-this.bankName = bankName;
-}
-public String getBankName(){
-return bankName;
-}
-
-public void setBranchName(String branchName){
-this.branchName = branchName;
-}
-public String getBranchName(){
-return  branchName;
-}
+System.out.println(name);
+System.out.println(type);
+System.out.println(noOfBranches);
 
 
-public void setIfccode(String ifccode){
-this.ifccode = ifccode;
-}
-public String getIfccode(){
-return ifccode;
-}
+System.out.println("End of transaction");
 
-
-public void setManagerName(String managerName){
-this.managerName = managerName;
-}
-public String getManagerName(){
-return managerName;
-}
-
-
-public void setNoOfEmployees(int noOfEmployees){
-this.noOfEmployees = noOfEmployees;
-}
-public int getNoOfEmployees(){
-return noOfEmployees;
-}
-
-public void setMifcCode(String mifcCode){
-this.mifcCode = mifcCode;
-}
-public String getMifcCode(){
-return mifcCode;
 }
 }
- 

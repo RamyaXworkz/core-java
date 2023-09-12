@@ -1,0 +1,3 @@
+class Naruto extends Anime{
+
+}

@@ -1,0 +1,3 @@
+class IMax extends Theater{
+
+}

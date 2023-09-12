@@ -1,0 +1,3 @@
+class IBM extends BestCompany{
+
+}
