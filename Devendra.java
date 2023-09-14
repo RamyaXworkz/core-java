@@ -1,3 +1,0 @@
-class Devendra extends Trainer{
-
-}

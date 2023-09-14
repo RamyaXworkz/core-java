@@ -1,3 +1,0 @@
-class Bengalore extends City{
-
-}

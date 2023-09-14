@@ -1,4 +1,0 @@
-class Voot extends OttPlatform{
-
-
-}
