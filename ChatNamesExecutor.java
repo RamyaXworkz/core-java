@@ -10,8 +10,10 @@ chatName.addChatName("Bhel Poori");
 chatName.addChatName("Aloo CHat");
 chatName.addChatName("Sev Puri");
 chatName.addChatName("Aloo tikki");
-chatName.addChatName("Dahi vada");
+chatName.addChatName("Gobi");
 chatName.addChatName("Samosa Chat");
+chatName.addChatName("Gobi");
+chatName.addChatName("Momos");
 chatName.getChatNames();
 }
 }
