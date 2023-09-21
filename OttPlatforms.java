@@ -45,6 +45,48 @@ if(movieNames[index] ==  movieName){
 }
 return exist;
 }
+public String searchByMovieName(String movieName){
+	System.out.println("Invoked searchByMovieName");
+	String cinemaName = null;
+	for(int index = 0;index < movieNames.length; index++){
+if(movieNames[index] ==  movieName){
+
+	cinemaName =  movieNames[index];
+}
+}
+return cinemaName;
+}
+
+String moviNamesAfterDelete [] = new String[movieNames.length-1];
+
+public boolean deleteBy( String name){
+	
+	boolean isDeleted = false;
+	
+	
+	int ind = 0;
+	
+for(int index = 0;index < movieNames.length; index++){
+	
+	if(movieNames[index] != name){
+		
+		moviNamesAfterDelete[ind++] = movieNames[index];
+		isDeleted = true;
+	}
+}
+
+return isDeleted;
+}
+
+ public void getDeletedMovNames(){
+	System.out.println("List of Movies After deleted are : ");
+	for(int index = 0; index< moviNamesAfterDelete.length ; index++){
+		
+		System.out.println(moviNamesAfterDelete[index]);
+
+}
+}
+
 }
 /*class OttPlatforms {
 	String movieNames[]=new String[4];

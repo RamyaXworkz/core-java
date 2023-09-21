@@ -2,7 +2,7 @@ class InteriorExecutor{
 
 public static void main(String song[]){
 
-Interior materialName = new Interior();
+WoodDesign materialName = new WoodDesign();
 materialName.addMaterialName("Wood");
 materialName.addMaterialName("Glass");
 materialName.addMaterialName("Marble");
@@ -16,5 +16,17 @@ materialName.addMaterialName("Plastic");
 materialName.addMaterialName("marble");
 
 materialName.getMaterialNames();
+
+
+System.out.println("Searching Mania");
+String mName = "kallu";
+System.out.println("Searching for the material " + mName);
+String materialNames =  materialName.searchByMaterialName(mName);
+System.out.println("Thank You for searching " + mName);
+
+boolean deletedmaterialName = materialName.deleteBy("kallu");
+System.out.println("The kallu material is deleted "+ deletedmaterialName);
+materialName.getDeletedmaterialNames();
+
 }
 }

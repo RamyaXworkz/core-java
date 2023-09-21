@@ -1,0 +1,3 @@
+class PlayList extends Spotify{
+
+}

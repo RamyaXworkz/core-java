@@ -45,4 +45,44 @@ if(playerNames[index] ==  playerName){
 }
 return exist;
 }
+public String searchByPlayerName(String playerName){
+	System.out.println("Invoked searchByPlayerName");
+	String pName = null;
+	for(int index = 0;index < playerNames.length; index++){
+if(playerNames[index] ==  playerName){
+	pName = playerNames[index] ;
+}
+}
+return pName;
+}
+String playerNamesAfterDelete [] = new String[playerNames.length-1];
+
+public boolean deleteBy( String name){
+	
+	boolean isDeleted = false;
+	
+	
+	int ind = 0;
+	
+for(int index = 0;index < playerNames.length; index++){
+	
+	if(playerNames[index] != name){
+		
+		playerNamesAfterDelete[ind++] =playerNames[index];
+		isDeleted = true;
+	}
+}
+
+return isDeleted;
+}
+
+ public void getDeletedplayerNames(){
+	System.out.println("List of Players After deleted are : ");
+	for(int index = 0; index< playerNamesAfterDelete.length ; index++){
+		
+		System.out.println(playerNamesAfterDelete[index]);
+
+}
+}
+
 }

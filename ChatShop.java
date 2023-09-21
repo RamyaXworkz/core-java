@@ -46,4 +46,48 @@ if(chatNames[index] ==  chatName){
 }
 return exist;
 }
+
+public String searchByChatName(String chatName){
+	System.out.println("Invoked searchByChatName");
+	String cName = null;
+	for(int index = 0;index < chatNames.length; index++){
+if(chatNames[index] ==  chatName){
+	cName = chatNames[index];
 }
+}
+return cName;
+}
+String chatNamesAfterDelete [] = new String[chatNames.length-1];
+
+public boolean deleteBy( String name){
+	
+	boolean isDeleted = false;
+	
+	
+	int ind = 0;
+	
+for(int index = 0;index < chatNames.length; index++){
+	
+	if(chatNames[index] != name){
+		
+		chatNamesAfterDelete[ind++] = chatNames[index];
+		isDeleted = true;
+	}
+}
+
+return isDeleted;
+}
+
+ public void getDeletedchatNames(){
+	System.out.println("List of chats After deleted are : ");
+	for(int index = 0; index< chatNamesAfterDelete.length ; index++){
+		
+		System.out.println(chatNamesAfterDelete[index]);
+
+}
+}
+
+}
+
+
+

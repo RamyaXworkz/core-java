@@ -45,4 +45,44 @@ public boolean checkIfSongNameExist(String songName){
 }
 return exist;
 }
+
+public String searchBySongName(String songName){
+	System.out.println("Invoked searchBySongName");
+	String sName = null;
+	for(int index = 0;index < songNames.length; index++){
+    if(songNames[index] ==  songName){
+	sName = songNames[index];
+}
+}
+return sName;
+}
+String songNamesAfterDelete [] = new String[songNames.length-1];
+
+public boolean deleteBy( String name){
+	
+	boolean isDeleted = false;
+	
+	
+	int ind = 0;
+	
+for(int index = 0;index < songNames.length; index++){
+	
+	if(songNames[index] != name){
+		
+		songNamesAfterDelete[ind++] = songNames[index];
+		isDeleted = true;
+	}
+}
+
+return isDeleted;
+}
+
+ public void getDeletedsongNames(){
+	System.out.println("List of songs After deleted are : ");
+	for(int index = 0; index< songNamesAfterDelete.length ; index++){
+		
+		System.out.println(songNamesAfterDelete[index]);
+
+}
+}
 }

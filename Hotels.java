@@ -44,4 +44,44 @@ if(foodNames[index] ==  foodName){
 }
 return exist;
 }
+
+public String  searchByFoodName(String foodName){
+	System.out.println("Invoked searchByFoodName");
+	String fName = null;
+	for(int index = 0;index < foodNames.length; index++){
+if(foodNames[index] ==  foodName){
+	fName = foodNames[index];
+}
+}
+return fName;
+}
+String foodNamesAfterDelete [] = new String[foodNames.length-1];
+
+public boolean deleteBy( String name){
+	
+	boolean isDeleted = false;
+	
+	
+	int ind = 0;
+	
+for(int index = 0;index < foodNames.length; index++){
+	
+	if(foodNames[index] != name){
+		
+		foodNamesAfterDelete[ind++] = foodNames[index];
+		isDeleted = true;
+	}
+}
+
+return isDeleted;
+}
+
+ public void getDeletedfoodNames(){
+	System.out.println("List of food Names After deleted are : ");
+	for(int index = 0; index< foodNamesAfterDelete.length ; index++){
+		
+		System.out.println(foodNamesAfterDelete[index]);
+
+}
+}
 }
