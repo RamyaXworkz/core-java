@@ -1,3 +1,0 @@
-class WoodDesign extends Interior {
-
-}

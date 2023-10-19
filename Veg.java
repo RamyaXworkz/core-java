@@ -1,3 +1,0 @@
-class Veg extends Hotels{
-
-}
