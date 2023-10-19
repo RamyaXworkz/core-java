@@ -1,3 +1,0 @@
-class Bater extends CricketTeam{
-
-}

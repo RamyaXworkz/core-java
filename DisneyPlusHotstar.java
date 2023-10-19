@@ -1,2 +1,0 @@
-class DisneyPlusHotstar extends OttPlatforms {
-}
