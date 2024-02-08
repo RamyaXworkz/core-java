@@ -21,4 +21,38 @@ public class HospitalServiceImpl implements HospitalService{
         }
         return false;
     }
+
+    @Override
+    public HospitalDto findByName(String name) {
+        if(!name.isEmpty() && name.length()>2){
+            return repo.findByName(name);
+        }
+        return null;
+    }
+
+    @Override
+    public boolean updatePhNumberByName(String name, long phNumber) {
+        if (!name.isEmpty() && name.length()>2){
+            System.out.println("name is valid");
+            if (phNumber>= 10){
+                System.out.println("Phone number is valid");
+                return repo.updatePhNumberByName(name,phNumber);
+            }
+            System.out.println("phone number is invalid");
+        }
+        System.out.println("Check with the name");
+        return false;
+    }
+
+    @Override
+    public boolean deleteByName(String name) {
+        if (!name.isEmpty() && name.length()>2){
+            System.out.println("name is valid");
+            return repo.deleteByName(name);
+        }
+        else {
+            System.out.println("Sorry we can't help to delete");
+        }
+        return false;
+    }
 }
