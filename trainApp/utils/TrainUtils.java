@@ -1,10 +1,10 @@
-package com.xworkz.hospital.utils;
+package com.xworkz.trainApp.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class HospitalUtils {
+public class TrainUtils {
     public static Connection getConnection(){
         try {
             Class.forName(DBProperties.DRIVER_PATH.value);

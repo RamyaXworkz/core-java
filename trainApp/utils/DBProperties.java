@@ -1,4 +1,4 @@
-package com.xworkz.hospital.utils;
+package com.xworkz.trainApp.utils;
 
 public enum DBProperties {
     URL("jdbc:mysql://localhost:3306/playstore"),USER("root"),PASSWORD("Ramya@1234"),DRIVER_PATH("com.mysql.cj.jdbc.Driver");
